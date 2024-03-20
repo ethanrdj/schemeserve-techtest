@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Crime Data Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup
 
-Currently, two official plugins are available:
+1. Run `npm install` to install dependencies.
+2. Run `npm run dev` to start the application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This application allows users to search for single postcodes or a list of postcodes separated by commas (e.g., NG2 6DD, RG42 1AF). Users can view a search history of all searched postcodes, which is persisted across sessions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Search:** Users can search for single postcodes or multiple postcodes separated by commas.
+- **Search History:** View a history of all searched postcodes.
+- **Crime Data:** View crime data for each postcode in both table and map formats.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Search:** Enter the desired postcode(s) in the search bar and press enter.
+2. **View History:** Access the search history to see previously searched postcodes.
+3. **Crime Data:** Explore crime data for each postcode presented in both table and map formats.
